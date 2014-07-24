@@ -1,0 +1,17 @@
+line height 24px
+grid 960px 12column * 64
+
+
+
+
+ru/ro roboto regular 16px
+med.ana.treck source sans Pro regular 24px 
+polita  sansPro 24 bold
+input sansPro semibold 14px 
+echipa sansPro bold	42px
+subtitle sansPro Light 14px
+membr echipei sansPro semibold 14px
+proin Iaculis sansPro semibold Italic 14px
+contacteazane sansPro black 24px
+input sansPro italic 14px
+trimete  sansPro semibold 14px

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="politaApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+    <link rel="stylesheet" href="css/polita.css">
+
+
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<header class="heder">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="logo" src="img/logo.png" />
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" >
+            <ul class="nav navbar-nav navbar-right" ng-controller="langController">
+                <li class="langBtn"><a  ng-class="currentLanguage == 'ro' ? 'active' : 'inactive'" ng-click="changeLanguage('ro')">Ro</a></li>
+                <li class="langBtn"><a  ng-class="currentLanguage == 'ru' ? 'active' : 'inactive'" ng-click="changeLanguage('ru')">Ru</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+        <%- body %>
+
+
+
+ <footer class="text-center" style="height: 50px;">
+     <div class="container">
+       <h4>Moldova,  Chisinau,  str. Uzinelor  1234 (+373)22-222-222  medm@gmail.com &#169;2014 Med.md Freebsd license</h4>
+     </div>
+ </footer>
+
+
+    <script src="js/plugins/Angular.js"></script>
+    <script src="js/common/services/app.js"></script>
+   </body>
+
+</html>
