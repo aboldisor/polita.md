@@ -83,6 +83,7 @@ img.center {
 
 .menu{
     margin-top: 150px;
+
 }
 
 
@@ -90,38 +91,45 @@ img.center {
 
 .drugs-check:active{
     background: url("/img/drugs-check-active-icon.png") no-repeat scroll 0 0;
+    height: 150px;
+    width: 160px;
+
 }
 
 
 .drugs-check{
     background: url("/img/drugs-check-icon.png") no-repeat scroll 0 0;
-    height: 150px;
-    width: 155px;
+    height: 134px;
+    width: 135px;
     display: inline-block;
 }
 
 .halty-test:active{
     background: url("/img/halty-test-active-icon.png") no-repeat scroll 0 0;
+    height: 150px;
+    width: 160px;
 }
 
 
 .halty-test{
      background: url("/img/halty-test-icon.png") no-repeat scroll 0 0;
-     height: 150px;
-     width: 155px;
+    height: 134px;
+    width: 135px;
     display: inline-block;
  }
 
 
 .halti-tracker:active{
     background: url("/img/halti-tracker-active.png") no-repeat scroll 0 0;
+    height: 150px;
+    width: 160px;
 }
 
 
 .halti-tracker{
     background: url("/img/halti-tracker.png") no-repeat scroll 0 0;
-    height: 150px;
-    width: 155px;
+    height: 134px;
+    width: 135px;
     display: inline-block;
 }
 
@@ -150,17 +158,9 @@ img.center {
 
 
 .circular {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url("/img/av-19392.gif") no-repeat;
     box-shadow: 0 0 20px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    display: inline-block;
-
 }
 
 .circular img {
@@ -187,10 +187,6 @@ img.center {
     margin-top: 50px;
     font-size: 1.5em;
 
-}
-
-.contacts{
-    
 }
 
 
@@ -471,3 +467,4 @@ td,
 th {
     padding: 0;
 }
+
