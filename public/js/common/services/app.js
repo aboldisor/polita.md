@@ -1,7 +1,7 @@
 
 
-(function(){
-    var app = angular.module('politaApp', ['ui.bootstrap','pascalprecht.translate'])
+
+    var app = angular.module('politaApp', ['ui.bootstrap','pascalprecht.translate','ngCookies'])
 
      .config(['$translateProvider', function ($translateProvider) {
             var ro = {
@@ -9,8 +9,12 @@
                     DRUGS    :"Medicamente",
                     ANALYSIS : "Analize",
                     HEALTHTRACKER : "Health-tracker",
-                    CHECKINSURANCE: "VERIFICA POLITA DE ASIGURARE",
-                    CHECKDOCTORREGISTRATION : "VERIFICA INREGISTRAREA LA MEDICUL DE FAMILIE"
+                    CHECK         : "VERIFICA",
+                    CHECKINSURANCE: "POLITA DE ASIGURARE",
+                    CHECKDOCTORREGISTRATION : "VERIFICA INREGISTRAREA LA MEDICUL DE FAMILIE",
+                    OURTEAM: "ECHIPA NOASTRA",
+                    MOTTO:   "Suntem ceia ce facem",
+                    CONTACTUS : "CONTACTEAZA-NE"
 
 
                 }
@@ -21,8 +25,12 @@
                     DRUGS    : "Справочник лекарств",
                     ANALYSIS : "Медицинские анализы",
                     HEALTHTRACKER : "Календарь здоровья",
-                    CHECKINSURANCE: "ПРОВЕРИТЬ СТРАХОВОЙ ПОЛИС",
-                    CHECKDOCTORREGISTRATION : "ПРОВЕРКА ЗАПИСИ ПАЦИЕНТОВ НА ПРИЕМ К ВРАЧУ"
+                    CHECK         : "ПРОВЕРИТЬ",
+                    CHECKINSURANCE: "СТРАХОВОЙ ПОЛИС",
+                    CHECKDOCTORREGISTRATION : "ПРОВЕРКА ЗАПИСИ ПАЦИЕНТОВ НА ПРИЕМ К ВРАЧУ",
+                    OURTEAM: "НАША КОМАНДА",
+                    MOTTO:   "Мы то что мы делаем",
+                    CONTACTUS : "Напиши нам"
 
                 }
             };
@@ -49,40 +57,18 @@
                         return "ro";
                 }
 
-            });
+            }).useLocalStorage();
+
+
+
 
 
 
       }]);
 
 
-    //TODO set in client Controler Directory
-     app.controller('langController',  ['$scope','$translate',function($scope,$translate) {
-
-            $scope.currentLanguage = $translate.use();
-            $scope.changeLanguage = function (langKey) {
-                $translate.use(langKey);
-                $scope.currentLanguage = langKey;
-            };
-
-    }]);
-
-
-
-
-})();
 
 
 
 
 
-//-------------------------------------------------------------------
-    var ro = {
-        INDEX: {
-
-        },
-        COMMON: {
-
-        }
-
-     };
